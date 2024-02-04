@@ -13,13 +13,18 @@ practice_form = PracticePage()
 @allure.label('owner', 'Alexey Telnov')
 @allure.feature('Tests DemoQA')
 @allure.title('Successful registration')
+@allure.tag('Form')
+@allure.link('https://demoqa.com/automation-practice-form', name="Demo QA")
+@allure.epic('Forms')
+@allure.feature('Practice Form')
+@allure.story('Отправка валидно заполненной формы')
 def test_registration():
     student = Student(
         first_name='Ivan',
         last_name='Ivanov',
         email='ivanov@gmail.com',
-        phone='89888888888',
-        address='Rostov',
+        phone='8988888888',
+        address='Rostovskaya srt',
         birthday=date(2000, 7, 5),
         gender='Male',
         subject='Economics',
@@ -47,4 +52,6 @@ def test_registration_required_field():
         student_registration_form_module.assert_results_registration(
             [('Student Name', 'Ivan Ivanov'),
              ('Gender', 'Male'),
-             ('Mobile', '89888888888')])
+             ('Mobile', '8988888888'),
+             ('Date of Birth', '04 February,2024')
+            ])
