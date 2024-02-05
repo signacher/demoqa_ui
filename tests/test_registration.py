@@ -17,7 +17,7 @@ practice_form = PracticePage()
 @allure.link('https://demoqa.com/automation-practice-form', name="Demo QA")
 @allure.epic('Forms')
 @allure.feature('Practice Form')
-@allure.story('Отправка валидно заполненной формы')
+@allure.story('Отправка формы cо всеми валидно заполненным полями')
 def test_registration():
     student = Student(
         first_name='Ivan',
@@ -32,23 +32,28 @@ def test_registration():
         image='picture.jpg',
         state='Haryana',
         city='Karnal')
-    with allure.step('Opening the registration page'):
+    with allure.step('Открываем форму регистрации'):
         practice_form.open()
-    with allure.step('Filling out the form'):
+    with allure.step('Заполняем форму регистрации'):
         practice_form.fill(student).submit()
-    with allure.step('Checking the values of the resulting form'):
+    with allure.step('Проверяем значения в итоговом окне'):
         practice_form.assert_results_registration(student)
 
 
 @allure.label('owner', 'Alexey Telnov')
 @allure.feature('Tests DemoQA')
 @allure.title('Successful registration with required fields')
+@allure.tag('Form')
+@allure.link('https://demoqa.com/automation-practice-form', name="Demo QA")
+@allure.epic('Forms')
+@allure.feature('Practice Form')
+@allure.story('Отправка  формы с валидно заполненными основными полями ')
 def test_registration_required_field():
-    with allure.step('Opening the registration page'):
+    with allure.step('Открываем форму регистрации'):
         student_registration_form_module.opening()
-    with allure.step('Filling out the form'):
+    with allure.step('Заполняем основные поля на форме регистрации'):
         student_registration_form_module.fill_registration_form(*read_txt_file('student.txt'))
-    with allure.step('Checking the values of the resulting form'):
+    with allure.step('Проверяем значения в итоговом окне'):
         student_registration_form_module.assert_results_registration(
             [('Student Name', 'Ivan Ivanov'),
              ('Gender', 'Male'),
