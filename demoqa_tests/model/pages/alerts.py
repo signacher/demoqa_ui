@@ -1,3 +1,5 @@
+import time
+
 from selene import have, be
 from selene.support.shared import browser
 from demoqa_tests.utils import attach
@@ -16,11 +18,13 @@ class AlertsPage:
 
     def click_btn_with_confirm(self):
         browser.element('#confirmButton').click()
+        time.sleep(1)
         return self
 
     def click_btn_alert(self):
         browser.element('#alertButton').click()
         attach.add_screenshot(browser)
+        time.sleep(1)
         return self
 
     def get_alert_text(self):
@@ -37,6 +41,7 @@ class AlertsPage:
 
     def click_btn_with_prompt(self):
         browser.element('#promtButton').click()
+        time.sleep(1)
         return self
 
     def type_to_alert(self, text):

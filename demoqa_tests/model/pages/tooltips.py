@@ -1,3 +1,4 @@
+import time
 from selene import have, be
 from selene.support.shared import browser
 
@@ -15,6 +16,7 @@ class TooltipPage:
 
     def set_focus_in_field(self):
         browser.element('#toolTipTextField').click()
+        time.sleep(1)
         return self
 
     def assert_text(self):
