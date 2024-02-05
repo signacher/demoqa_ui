@@ -15,10 +15,8 @@ alerts = AlertsPage()
 def test_text_alert():
     with allure.step('Открываем страницу с оповещениями'):
         alerts.open()
-        attach.add_screenshot()
     with allure.step('Button click to trigger alert'):
         alerts.click_btn_alert()
-        attach.add_screenshot()
     with allure.step('Assert alert text'):
         text_alert = alerts.get_alert_text()
         assert text_alert == 'You clicked a button'

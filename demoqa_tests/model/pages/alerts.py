@@ -11,6 +11,7 @@ class AlertsPage:
         else:
             pass
         browser.driver.execute_script("$('#fixedban').remove()")
+        attach.add_screenshot(browser)
         return self
 
     def click_btn_with_confirm(self):
@@ -19,11 +20,12 @@ class AlertsPage:
 
     def click_btn_alert(self):
         browser.element('#alertButton').click()
+        attach.add_screenshot(browser)
         return self
 
     def get_alert_text(self):
         alert_window = browser.driver.switch_to.alert
-        attach.add_screenshot()
+        attach.add_screenshot(browser)
         alert_text = alert_window.text
         browser.driver.switch_to.alert.accept()
         return alert_text
