@@ -17,6 +17,7 @@ class TooltipPage:
     def set_focus_in_field(self):
         browser.element('#toolTipTextField').click()
         time.sleep(1)
+        browser.element('#toolTipTextField').click()
         return self
 
     def assert_text(self):
