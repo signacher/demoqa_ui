@@ -13,7 +13,7 @@ class PracticePage:
 
     def open(self):
         browser.open('/automation-practice-form')
-        browser.element('.fc-button-label').click()
+        # browser.element('.fc-button-label').click()
         browser.driver.execute_script("$('footer').remove()")
         browser.driver.execute_script("$('#fixedban').remove()")
         return self
