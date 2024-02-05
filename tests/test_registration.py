@@ -11,7 +11,6 @@ practice_form = PracticePage()
 
 
 @allure.label('owner', 'Alexey Telnov')
-@allure.feature('Tests DemoQA')
 @allure.title('Successful registration')
 @allure.tag('Form')
 @allure.link('https://demoqa.com/automation-practice-form', name="Demo QA")
@@ -41,7 +40,6 @@ def test_registration():
 
 
 @allure.label('owner', 'Alexey Telnov')
-@allure.feature('Tests DemoQA')
 @allure.title('Successful registration with required fields')
 @allure.tag('Form')
 @allure.link('https://demoqa.com/automation-practice-form', name="Demo QA")

@@ -18,7 +18,7 @@ def pytest_addoption(parser):
     parser.addoption('--browser_version', action='store', default="99.0")
 
 
-@pytest.fixture(scope='function', autouse=True)
+@pytest.fixture(scope='session', autouse=True)
 def open_browser(request):
     browser_name = request.config.getoption('browser_name')
     browser_version = request.config.getoption('browser_version')
@@ -40,6 +40,7 @@ def open_browser(request):
     )
     browser.config.driver = driver
     browser.config.base_url = 'https://demoqa.com'
+    browser.config.timeout = 10
     browser.config.window_width = 1920
     browser.config.window_height = 1080
     yield
