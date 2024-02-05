@@ -5,7 +5,6 @@ alerts = AlertsPage()
 
 
 @allure.label('owner', 'Alexey Telnov')
-@allure.feature('Tests DemoQA')
 @allure.title('Alert confirmation')
 @allure.tag('Alerts')
 @allure.link('https://demoqa.com/alerts', name="Demo QA")
@@ -22,7 +21,6 @@ def test_confirm_alert():
 
 
 @allure.label('owner', 'Alexey Telnov')
-@allure.feature('Tests DemoQA')
 @allure.title('Alert confirmation')
 @allure.tag('Alerts')
 @allure.link('https://demoqa.com/alerts', name="Demo QA")
