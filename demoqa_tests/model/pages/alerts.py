@@ -23,6 +23,7 @@ class AlertsPage:
 
     def get_alert_text(self):
         alert_window = browser.driver.switch_to.alert
+        ttach.add_screenshot()
         alert_text = alert_window.text
         browser.driver.switch_to.alert.accept()
         return alert_text
