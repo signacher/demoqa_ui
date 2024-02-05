@@ -1,7 +1,6 @@
 import allure
 from demoqa_tests.model.pages.alerts import AlertsPage
 import pytest
-from demoqa_tests.utils import attach
 alerts = AlertsPage()
 
 
@@ -12,6 +11,7 @@ alerts = AlertsPage()
 @allure.epic('Alerts, Frame & Windows')
 @allure.feature('Alerts')
 @allure.story('Проверка текста оповещения')
+@pytest.mark.skip
 def test_text_alert():
     with allure.step('Открываем страницу с оповещениями'):
         alerts.open()

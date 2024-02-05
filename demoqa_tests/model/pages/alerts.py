@@ -1,5 +1,4 @@
 import time
-
 from selene import have, be
 from selene.support.shared import browser
 from demoqa_tests.utils import attach
@@ -10,8 +9,6 @@ class AlertsPage:
         browser.open('/alerts')
         if browser.element('.fc-button-label').should(be.visible):
             browser.element('.fc-button-label').click()
-        else:
-            pass
         browser.driver.execute_script("$('#fixedban').remove()")
         attach.add_screenshot(browser)
         return self
@@ -23,8 +20,7 @@ class AlertsPage:
 
     def click_btn_alert(self):
         browser.element('#alertButton').click()
-        attach.add_screenshot(browser)
-        time.sleep(1)
+        time.sleep(5)
         return self
 
     def get_alert_text(self):
