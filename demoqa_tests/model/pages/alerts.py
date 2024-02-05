@@ -17,6 +17,14 @@ class AlertsPage:
         browser.element('#confirmButton').click()
         return self
 
+    def click_btn_alert(self):
+        browser.element('#alertButton').click()
+        return self
+
+    def get_alert_text(self):
+        text_alert = browser.driver.switch_to.alert.text
+        return text_alert
+
     def assert_confirm_alert(self):
         browser.driver.switch_to.alert.accept()
         browser.element('#confirmResult').should(have.text("You selected Ok"))

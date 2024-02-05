@@ -10,6 +10,23 @@ alerts = AlertsPage()
 @allure.link('https://demoqa.com/alerts', name="Demo QA")
 @allure.epic('Alerts, Frame & Windows')
 @allure.feature('Alerts')
+@allure.story('Проверка текста оповещения')
+def test_text_alert():
+    with allure.step('Открываем страницу с оповещениями'):
+        alerts.open()
+    with allure.step('Button click to trigger alert'):
+        alerts.click_btn_alert()
+    with allure.step('Assert alert text'):
+        text_alert = alerts.get_alert_text()
+        assert text_alert == 'You clicked a button'
+
+
+@allure.label('owner', 'Alexey Telnov')
+@allure.title('Alert confirmation')
+@allure.tag('Alerts')
+@allure.link('https://demoqa.com/alerts', name="Demo QA")
+@allure.epic('Alerts, Frame & Windows')
+@allure.feature('Alerts')
 @allure.story('Подтверждение оповещения')
 @pytest.mark.skip
 def test_confirm_alert():
