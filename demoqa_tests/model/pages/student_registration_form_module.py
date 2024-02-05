@@ -7,6 +7,8 @@ def opening():
     browser.open("/automation-practice-form")
     if browser.element('.fc-button-label').should(be.visible):
         browser.element('.fc-button-label').click()
+    else:
+        pass
     browser.driver.execute_script("$('footer').remove()")
     browser.driver.execute_script("$('#fixedban').remove()")
 
