@@ -1,6 +1,6 @@
 from selene import have, be
 from selene.support.shared import browser
-
+from demoqa_tests.utils import attach
 
 class AlertsPage:
 
@@ -23,7 +23,7 @@ class AlertsPage:
 
     def get_alert_text(self):
         alert_window = browser.driver.switch_to.alert
-        ttach.add_screenshot()
+        attach.add_screenshot()
         alert_text = alert_window.text
         browser.driver.switch_to.alert.accept()
         return alert_text
