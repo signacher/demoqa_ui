@@ -1,6 +1,6 @@
 from selene import have
 from selene.support.shared import browser
-
+from selene import  be
 from demoqa_tests.model.methods.checkbox import Checkbox
 from demoqa_tests.model.methods.datepicker import Datepicker
 from demoqa_tests.model.methods.dropdown import Dropdown
@@ -13,7 +13,8 @@ class PracticePage:
 
     def open(self):
         browser.open('/automation-practice-form')
-        # browser.element('.fc-button-label').click()
+        if browser.element('.fc-button-label').should(be.visible):
+            browser.element('.fc-button-label').click()
         browser.driver.execute_script("$('footer').remove()")
         browser.driver.execute_script("$('#fixedban').remove()")
         return self

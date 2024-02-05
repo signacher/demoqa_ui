@@ -5,7 +5,8 @@ from demoqa_tests.model.methods.radio import Radio
 
 def opening():
     browser.open("/automation-practice-form")
-    # browser.element('.fc-button-label').click()
+    if browser.element('.fc-button-label').should(be.visible):
+        browser.element('.fc-button-label').click()
     browser.driver.execute_script("$('footer').remove()")
     browser.driver.execute_script("$('#fixedban').remove()")
 

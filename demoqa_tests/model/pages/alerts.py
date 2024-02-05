@@ -1,4 +1,4 @@
-from selene import have
+from selene import have, be
 from selene.support.shared import browser
 
 
@@ -6,7 +6,8 @@ class AlertsPage:
 
     def open(self):
         browser.open('/alerts')
-        # browser.element('.fc-button-label').click()
+        if browser.element('.fc-button-label').should(be.visible):
+            browser.element('.fc-button-label').click()
         browser.driver.execute_script("$('#fixedban').remove()")
         return self
 
