@@ -22,8 +22,10 @@ class AlertsPage:
         return self
 
     def get_alert_text(self):
-        text_alert = browser.driver.switch_to.alert.text
-        return text_alert
+        alert_window = browser.driver.switch_to.alert
+        alert_text = alert_window.text
+        browser.driver.switch_to.alert.accept()
+        return alert_text
 
     def assert_confirm_alert(self):
         browser.driver.switch_to.alert.accept()
@@ -43,4 +45,5 @@ class AlertsPage:
         browser.element('#promptResult').should(have.text(f"You entered {text}"))
         return self
 
-
+    def accept_alert(self):
+        browser.driver.switch_to.alert.accept()
