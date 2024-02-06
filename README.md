@@ -106,9 +106,9 @@
 ![This is an image2](images/cee079fcebf0ff95a88dd3d06edd86fc.gif)
 </details>
 
-### <img width="3%" title="Telegram" src="https://github.com/signacher/signacher/blob/main/images/tg.png"> [Уведомление в Telegram]
+### <img width="3%" title="Telegram" src="https://github.com/signacher/signacher/blob/main/images/tg.png"> [Уведомление в telegram]
 
-#### После прохождения тестов в телеграмм канал бот присылает уведомление с краткой информацией и ссылкой на отчет. Так же можно добавить уведомления на почту, в `Discord`, `Slack` и другие мессенджеры
+После прохождения тестов в телеграмм канал бот присылает уведомление с краткой информацией и ссылкой на отчет. Так же можно добавить уведомления на почту, в `Discord`, `Slack` и другие мессенджеры
 
 <img width="40%" title="Telegram" src="images/telegram.jpg">
 
@@ -120,16 +120,16 @@
 Все данные о запусках тестов также хранятся в Allure TestOps
 ![Testops1](images/AllureTestOps1.png)
 
-<details><summary><strong>TestOps автоматически формирует тест кейсы на основе результатов прохождения тестов</strong></summary>
- 
-![Testops4](images/AllureTestOps4.png)
-</details>
-
-<details><summary><strong>Можно фильтровать тесты и запускать их выборочно непосредственно из TestOps</strong></summary>
- 
-![Testops3](images/AllureTestOps3.png)
-</details>
-
+> <details><summary><strong>TestOps автоматически формирует тест кейсы на основе результатов прохождения тестов</strong></summary>
+>
+>![Testops4](images/AllureTestOps4.png)
+></details>
+>
+><details><summary><strong>Можно фильтровать тесты и запускать их выборочно непосредственно из TestOps</strong></summary>
+>
+>![Testops3](images/AllureTestOps3.png)
+></details>
+>
 > - Можно создавать ручные тест кейсы и импортировать их в IDE с помощью плагина
 > - Результаты тестирования отображаются в реальном времени во время прохождения теста
 > - Можно настроить интеграцию с `Jira`
