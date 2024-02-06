@@ -1,5 +1,5 @@
 <table width="100%" border='0'>
- <tr><td width="40%" valign="bottom"><img src="https://github.com/signacher/signacher/blob/main/images/demoqa.png" title="shop" alt="demoqa" width="300" height="200"/></td><td valign="middle">
+ <tr><td width="40%" valign="bottom"><img src="https://github.com/signacher/signacher/blob/main/images/demoqa.png" title="shop" alt="demoqa" width="380" height="200"/></td><td valign="middle">
  <h2>Пример организации автотестирования сайта <a target="_blank" href="https://www.demoqa.com/">www.demoqa.com</a></h2>
  </td></tr>
 </table>
@@ -10,8 +10,9 @@
 - [Описание проекта](#heavy_check_mark-описание)
 - [Технологии и инструменты](#gear-технологии-и-инструменты)
 - [Реализованные проверки](#ballot_box_with_check-реализованные-проверки)
-- [Запуск тестов в Jenkins](#on-как-запускать-тесты)
-- [Allure отчет](#bar_chart-allure-отчет-о-прохождении-тестов)
+- [Запуск тестов в Jenkins](#-как-запускать-тесты)
+- [Allure отчет](#-allure-отчет-о-прохождении-тестов)
+- [Видео прохождения тестов](#movie_camera-примеры-видео-прохождения-тестов)
   
 ## :heavy_check_mark: Описание:
 > - Демо проект по автоматизации тестирования UI сайта <a target="_blank" href="https://demoqa.com/"> demoqa.com<a>
@@ -62,7 +63,12 @@
 ## <img width="3%" title="Allure" src="https://github.com/signacher/signacher/blob/main/images/allure_report.png"> Allure отчет о прохождении тестов
 
 Пример отчета по ссылке <a target="_blank" href="https://jenkins.autotests.cloud/job/demo_qa_ui/allure/"> https://jenkins.autotests.cloud/job/demo_qa_ui/allure/</a>
+> Для перехода в отчет из Jenkins иконки 1 или 2 на скрине
 
+![Screen jenkins1](images/Jenkins3.png)
+
+###### Главный экран (Overview)
+![Screen Allure1](images/AllureReport1.png)
 *Главная страница Allure-отчета содержит следующие информационные блоки:*
 
 > - [x] <code><strong>*ALLURE REPORT*</strong></code> - отображается дату и время прохождения теста, общее количество тест кейсов, а также диаграмма с указанием процента и количества успешных, упавших и сломавшихся в процессе выполнения тестов
@@ -72,14 +78,28 @@
 >- [x] <code><strong>*ENVIRONMENT*</strong></code> - отображает тестовое окружение, на котором запускались тесты 
 >- [x] <code><strong>*FEATURES BY STORIES*</strong></code> - отображает распределение тестов по функционалу, который они проверяют
 
-###### Главный экран (Owerview)
-![Screen Allure1](images/AllureReport1.png)
-###### Пример описания шагов теста
+<details><summary><strong>Пример описания шагов теста</strong></summary>
+
 ![Screen Allure2](images/AllureReport2.png)
+</details> 
+<details><summary><strong>Пример описания шагов теста c подшагами</strong></summary>
+ 
+![Screen Allure4](images/AllureReport4.png)
+</details> 
 
+<details><summary><strong>Вложения для каждого теста: Page sourse, Скриншот, Видео прохождения, Лог.</strong></summary>
+ 
+![Screen Allure3](images/AllureReport3.png)
+</details>
 
+## :movie_camera: Примеры видео прохождения тестов:
 
+<details><summary><strong>Отправка формы и проверка данных только с заполнением основных полей</strong></summary>
 
+![This is an image1](images/9cbf866543d960a7eebbbad2ff458039.gif)
+</details>
 
-
-
+<details><summary><strong>Проверка всплывающей подсказки в текстовом поле</strong></summary>
+ 
+![This is an image2](images/cee079fcebf0ff95a88dd3d06edd86fc.gif)
+</details>
