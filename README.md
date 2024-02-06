@@ -13,6 +13,8 @@
 - [Запуск тестов в Jenkins](#-как-запускать-тесты)
 - [Allure отчет](#-allure-отчет-о-прохождении-тестов)
 - [Видео прохождения тестов](#movie_camera-примеры-видео-прохождения-тестов)
+- [Уведомления в Telegram](-уведомление-в-telegram)
+- [Интеграция с Allure TestOps](-интеграция-с-allure-testops)
   
 ## :heavy_check_mark: Описание:
 > - Демо проект по автоматизации тестирования UI сайта <a target="_blank" href="https://demoqa.com/"> demoqa.com<a>
@@ -103,3 +105,33 @@
  
 ![This is an image2](images/cee079fcebf0ff95a88dd3d06edd86fc.gif)
 </details>
+
+### <img width="3%" title="Telegram" src="https://github.com/signacher/signacher/blob/main/images/tg.png">[Уведомление в Telegram]
+
+## После прохождения тестов в телеграмм канал бот присылает уведомление с краткой информацией и ссылкой на отчет. Так же можно добавить уведомления на почту, в `Discord`, `Slack` и другие мессенджеры
+
+<img width="40%" title="Telegram" src="images/telegram.jpg">
+
+### <img width="3%" title="Allure TestOps" src="https://github.com/signacher/signacher/blob/main/images/allure_testops.png"> [Интеграция с Allure TestOps]
+### [Dashboard](https://allure.autotests.cloud/project/4025/dashboards)
+Для перехода из Jenkins нажать 3
+![Testops1](images/Jenkins3.png)
+
+Все данные о запусках тестов также хранятся в Allure TestOps
+![Testops1](images/AllureTestOps1.png)
+
+<details><summary><strong>TestOps автоматически формирует тест кейсы на основе результатов прохождения тестов</strong></summary>
+ 
+![Testops4](images/AllureTestOps4.png)
+</details>
+
+<details><summary><strong>Можно фильтровать тесты и запускать их выборочно непосредственно из TestOps</strong></summary>
+ 
+![Testops3](images/AllureTestOps3.png)
+</details>
+
+> - Можно создавать ручные тест кейсы и импортировать их в IDE с помощью плагина
+> - Результаты тестирования отображаются в реальном времени во время прохождения теста
+> - Можно настроить интеграцию с `Jira`
+
+
