@@ -14,7 +14,7 @@
 - [Allure отчет](#-allure-отчет-о-прохождении-тестов)
 - [Видео прохождения тестов](#movie_camera-примеры-видео-прохождения-тестов)
 - [Уведомления в Telegram](#-уведомление-в-telegram)
-- [Интеграция с Allure TestOps](-интеграция-с-allure-testops)
+- [Интеграция с Allure TestOps](-интеграция-с-allure-test-ops)
   
 ## :heavy_check_mark: Описание:
 > - Демо проект по автоматизации тестирования UI сайта <a target="_blank" href="https://demoqa.com/"> demoqa.com<a>
@@ -114,7 +114,7 @@
 
 <img width="40%" title="Telegram" src="images/telegram.jpg">
 
-### <img width="3%" title="Allure TestOps" src="https://github.com/signacher/signacher/blob/main/images/allure_testops.png"> Интеграция с Allure TestOps
+### <img width="3%" title="Allure TestOps" src="https://github.com/signacher/signacher/blob/main/images/allure_testops.png"> Интеграция с Allure Test Ops
 ### [Dashboard](https://allure.autotests.cloud/project/4025/dashboards)
 Для перехода из Jenkins нажать 3
 ![Testops1](images/Jenkins3.png)
