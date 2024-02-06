@@ -139,3 +139,5 @@
 > - Можно настроить интеграцию с `Jira`
 
 ### <img width="3%" title="Jira" src="https://github.com/signacher/signacher/blob/main/images/jira.png"> Интеграция с Jira
+
+написать про .env файл в описании и кратком описании
