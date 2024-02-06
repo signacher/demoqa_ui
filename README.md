@@ -15,6 +15,7 @@
 - [Видео прохождения тестов](#movie_camera-примеры-видео-прохождения-тестов)
 - [Уведомления в Telegram](#-уведомление-в-telegram)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-test-ops)
+- [Интеграция с Jira](#-интеграция-с-jira)
   
 ## :heavy_check_mark: Описание:
 > - Демо проект по автоматизации тестирования UI сайта <a target="_blank" href="https://demoqa.com/"> demoqa.com<a>
@@ -136,4 +137,4 @@
 > - Результаты тестирования отображаются в реальном времени во время прохождения теста
 > - Можно настроить интеграцию с `Jira`
 
-
+### <img width="3%" title="Jira" src="https://github.com/signacher/signacher/blob/main/images/jira.png"> Интеграция с Jira
