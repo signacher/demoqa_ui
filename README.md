@@ -71,6 +71,7 @@
 
 ###### Главный экран (Overview)
 ![Screen Allure1](images/AllureReport1.png)
+
 *Главная страница Allure-отчета содержит следующие информационные блоки:*
 
 > - [x] <code><strong>*ALLURE REPORT*</strong></code> - отображается дату и время прохождения теста, общее количество тест кейсов, а также диаграмма с указанием процента и количества успешных, упавших и сломавшихся в процессе выполнения тестов
@@ -94,6 +95,7 @@
 ![Screen Allure3](images/AllureReport3.png)
 </details>
 
+
 ## :movie_camera: Примеры видео прохождения тестов:
 
 <details><summary><strong>Отправка формы и проверка данных только с заполнением основных полей</strong></summary>
@@ -106,13 +108,13 @@
 ![This is an image2](images/cee079fcebf0ff95a88dd3d06edd86fc.gif)
 </details>
 
-### <img width="3%" title="Telegram" src="https://github.com/signacher/signacher/blob/main/images/tg.png"> [Уведомление в telegram]
+### <img width="3%" title="Telegram" src="https://github.com/signacher/signacher/blob/main/images/tg.png"> Уведомление в telegram
 
 После прохождения тестов в телеграмм канал бот присылает уведомление с краткой информацией и ссылкой на отчет. Так же можно добавить уведомления на почту, в `Discord`, `Slack` и другие мессенджеры
 
 <img width="40%" title="Telegram" src="images/telegram.jpg">
 
-### <img width="3%" title="Allure TestOps" src="https://github.com/signacher/signacher/blob/main/images/allure_testops.png"> [Интеграция с Allure TestOps]
+### <img width="3%" title="Allure TestOps" src="https://github.com/signacher/signacher/blob/main/images/allure_testops.png"> Интеграция с Allure TestOps
 ### [Dashboard](https://allure.autotests.cloud/project/4025/dashboards)
 Для перехода из Jenkins нажать 3
 ![Testops1](images/Jenkins3.png)
