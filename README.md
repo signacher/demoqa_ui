@@ -106,9 +106,9 @@
 ![This is an image2](images/cee079fcebf0ff95a88dd3d06edd86fc.gif)
 </details>
 
-### <img width="3%" title="Telegram" src="https://github.com/signacher/signacher/blob/main/images/tg.png">[Уведомление в Telegram]
+### <img width="3%" title="Telegram" src="https://github.com/signacher/signacher/blob/main/images/tg.png"> [Уведомление в Telegram]
 
-## После прохождения тестов в телеграмм канал бот присылает уведомление с краткой информацией и ссылкой на отчет. Так же можно добавить уведомления на почту, в `Discord`, `Slack` и другие мессенджеры
+#### После прохождения тестов в телеграмм канал бот присылает уведомление с краткой информацией и ссылкой на отчет. Так же можно добавить уведомления на почту, в `Discord`, `Slack` и другие мессенджеры
 
 <img width="40%" title="Telegram" src="images/telegram.jpg">
 
