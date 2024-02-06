@@ -14,7 +14,7 @@
 - [Allure отчет](#-allure-отчет-о-прохождении-тестов)
 - [Видео прохождения тестов](#movie_camera-примеры-видео-прохождения-тестов)
 - [Уведомления в Telegram](#-уведомление-в-telegram)
-- [Интеграция с Allure TestOps](-интеграция-с-allure-test-ops)
+- [Интеграция с Allure TestOps](#-интеграция-с-allure-test-ops)
   
 ## :heavy_check_mark: Описание:
 > - Демо проект по автоматизации тестирования UI сайта <a target="_blank" href="https://demoqa.com/"> demoqa.com<a>
