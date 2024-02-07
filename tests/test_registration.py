@@ -56,5 +56,5 @@ def test_registration_required_field():
             [('Student Name', 'Ivan Ivanov'),
              ('Gender', 'Male'),
              ('Mobile', '8988888888'),
-             ('Date of Birth', '05 February,2024')
+             ('Date of Birth', '07 February,2024')
             ])
