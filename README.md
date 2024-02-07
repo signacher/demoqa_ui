@@ -119,7 +119,7 @@
 
 ### <img width="3%" title="Allure TestOps" src="https://github.com/signacher/signacher/blob/main/images/allure_testops.png"> Интеграция с Allure Test Ops
 ### [Dashboard](https://allure.autotests.cloud/project/4025/dashboards)
-Для перехода из Jenkins нажать 3
+> Для перехода из Jenkins нажать 3
 ![Testops1](images/Jenkins3.png)
 
 Все данные о запусках тестов также хранятся в Allure TestOps
