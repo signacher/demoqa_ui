@@ -22,6 +22,7 @@
 > - Проект создан в рамках обучения на курсе <a target="_blank" href="https://qa.guru/python"> QA GURU Автоматизация тестирования на Python</a>
 > - Тесты написаны на языке <code>Python</code> с помощью библиотеки <code>Selene</code>
 > - Запуск тестов осуществляется в <code>Jenkins</code> с вариантами выбора браузера и его версии
+> - Все пароли не хранятся в репозитории, а берутся из `.env` файла, создаваемого в пайплайне (можно скрыть в secrets переменные) 
 > - Браузеры запускаются в <code>Docker</code> контейнере с помощью <code>Selenoid</code>
 > - По результатам тестов формируется <code>Allure</code> отчет с вложениями (скриншоты, логи, видео прохождения теста)
 > - Отправляется уведомление о результатах прохождения тестов в <code>Telegram</code> 
@@ -118,7 +119,8 @@
 
 ### <img width="3%" title="Allure TestOps" src="https://github.com/signacher/signacher/blob/main/images/allure_testops.png"> Интеграция с Allure Test Ops
 ### [Dashboard](https://allure.autotests.cloud/project/4025/dashboards)
-Для перехода из Jenkins нажать 3
+> Для перехода из Jenkins нажать 3
+
 ![Testops1](images/Jenkins3.png)
 
 Все данные о запусках тестов также хранятся в Allure TestOps
@@ -139,5 +141,8 @@
 > - Можно настроить интеграцию с `Jira`
 
 ### <img width="3%" title="Jira" src="https://github.com/signacher/signacher/blob/main/images/jira.png"> Интеграция с Jira
+#### [Задача в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1102)
 
-написать про .env файл в описании и кратком описании Добавить в краткое описание ссылки на ридми
+В задачу Jira из Allure TestOps можно добавить список тест кейсов и ссылку на запуски тестов. 
+![Jira1](images/jira1.png)
+
